@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BiliwanaginMaster.master.cs" Inherits="WebApplication3.Masterpages.BiliwanaginMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="../template.css" rel="stylesheet"/>
+    <link href="../template.css" rel="stylesheet"/>
+    <!-- For mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    	<header class="navbar navbar-static-top" id="top" role="banner">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a href="../" class="navbar-brand"><img width="26" height="29" border="0" src="../images/rep.png" class="republic"></a>
+		</div>
+		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		  <ul class="nav navbar-nav">
+			<li class="active">
+			  <a href="../home.aspx/">Home</a>
+			</li>
+			<li>
+			  <a href="../aboutus/">About Us</a>
+			</li>
+			<li>
+			  <a href="../procurementprocess.aspx/">Government Procurement</a>
+			</li>
+			<li>
+			  <a href="../projects.aspx/">Projects</a>
+			</li>
+			<li>
+			  <a href="../agencies.aspx/">Agencies</a>
+			</li>
+			<li>
+			  <a href="../merchants.aspx/">Vendors</a>
+			</li>
+			<li>
+			  <a href="../Contactus/">Contact Us</a>
+			</li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="../register" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Register</a></li>
+			<li><a href="../signin" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Sign in</a></li>
+		  </ul>
+		</nav>
+	  </div>
+	</header>
+	<nav class="bs-docs-masthead" id="content" role="main">
+	  <div class="container">
+		<div class="col-sm-7 padding-none">
+			<!--<a href="../" class=""><img class="logo" src="images/logo.jpg" width="249" height="56"></a>-->
+            <a href="../" class=""><img class="logo" src="../images/logo.jpg" height="56"></a>
+		</div>
+		<div class="col-sm-3 ml60 pull-right">
+			<!--<a href="../"><img class="logo02 f1" src="images/datagovph.jpg" width="139" height="76" align="right"></a>
+			<a href="../"><img class="logo02 f1" src="images/philgeps.jpg" width="74" height="76" align="right"></a>-->
+            <a href="../"><img class="logo02 f1" src="../images/datagovph.jpg" height="56"></a>
+			<a href="../"><img class="logo02 f1" src="../images/philgeps.jpg" height="56""></a>
+		</div>
+	  </div>
+	</nav>
+	<main class="bs-docs-masthead" id="bg01" role="main">
+	  <div class="container">
+			<div>
+				        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+			</div>
+	  </div>
+	</main>
+	<footer class="" role="contentinfo">
+	<div class="bg02">
+		<div class="container">
+			<ul class="bs-docs-footer-links muted">
+			  <li class="f1"><a href="#">Home</a></li>
+			  <li class="f1">|</li>
+			  <li class="f1"><a href="#">About Us</a></li>
+			  <li class="f1">|</li>
+			  <li class="f1"><a href="#">Government Procurement</a></li>
+			  <li class="f1">|</li>
+			  <li class="f1"><a href="#">Projects</a></li>
+			  <li class="f1">|</li>
+			  <li class="f1"><a href="#">Agencies</a></li>
+			  <li class="f1">|</li>
+			  <li class="f1"><a href="#">Vendors</a></li>
+			  <li class="f1">|</li>
+			  <li class="f1"><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="bc01">
+		<div class="container">
+		  <h5 class="c01">©2014 Biliwanagin, Inc. Terms & Conditions</h5>
+		  </div>
+	</div>
+	</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>
